@@ -1,5 +1,4 @@
 require_relative 'config'
-require 'telegram_bot'
 require 'awesome_print'
 require 'net/http'
 
@@ -39,6 +38,5 @@ bot.get_updates(fail_silently: true) do |message|
         reply.parse_mode = 'HTML'
     end
     reply.send_with(bot)
-    ap message.from
   end
 end
