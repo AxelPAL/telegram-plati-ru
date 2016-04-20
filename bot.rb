@@ -1,5 +1,5 @@
 require_relative 'config'
-require 'awesome_print'
+require 'telegram_bot'
 require 'net/http'
 
 bot = TelegramBot.new(token: @telegram_api)
